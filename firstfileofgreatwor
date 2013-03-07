@@ -1,9 +1,11 @@
 #include <iostream>
+#include "stdafx.h"
 using namespace std;
 int array[10];
+int col;
 void main() 
 {   for( int i=0; i<10; i++)
-    {cin>> array[i]>> '\n';}
+    {cin  >> array[i];}
    
     int trash=0;  
     for (int i=1; i<=col; i++)
@@ -18,8 +20,9 @@ void main()
                 array [j]=array [j+1];
                 array [j+1]=trash;
             }
-        }
+        
     }
    for (int i=0; i<10;i++)
-    {cout<< array[i]<< '\n'}
+    {cout<< array[i]<< "\n";};
 }
+
